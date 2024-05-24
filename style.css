@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #ffc0cb; /* Warna pink */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select,
+input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #94096f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #94096f;
+}
+
+/* Style untuk pesan konfirmasi */
+.swal2-title {
+    color: #333;
+}
+
+.swal2-content {
+    color: #555;
+}
+
+.swal2-popup {
+    background-color: #ffc0cb; /* Warna pink */
+}
+
+.swal2-actions .swal2-confirm {
+    background-color: #94096f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.swal2-actions .swal2-confirm:hover {
+    background-color: #94096f;
+}

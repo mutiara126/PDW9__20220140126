@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi Kunjungan Museum</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <h2>Form Reservasi Kunjungan Museum</h2>
+        <form id="ticketForm">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="tanggalKunjungan">Tanggal Kunjungan:</label>
+            <input type="date" id="tanggalKunjungan" name="tanggalKunjungan" required><br><br>
+
+            <label for="jamKedatangan">Jam Kedatangan:</label>
+            <select id="jamKedatangan" name="jamKedatangan" required>
+                <option value="Pagi (08.30-11.30)">Pagi (08.30-11.30)</option>
+                <option value="Siang (13.00-17.30)">Siang (13.00-17.30)</option>
+                <option value="Malam (18.00-20.00)">Malam (18.00-20.00)</option>
+            </select><br><br>
+
+            <label for="quantity">Jumlah Tiket:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+            <label for="agree">Saya setuju dengan syarat dan ketentuan:</label>
+            <input type="checkbox" id="agree" name="agree" required><br><br>
+
+            <input type="submit" value="Pesan Tiket">
+        </form>
+    </div>
+
+    <script src="script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
